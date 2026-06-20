@@ -15,7 +15,7 @@ module.exports = async function handler(req, res) {
     const base_url = `https://${shopify_store}/admin/api/2024-04`;
     // Token lo
     const tokenResponse = await fetch(
-      `https://${shopify_store}/admin/api/2024-04/oauth/access_token`,
+      `https://${shopify_store}/admin/oauth/access_token`,
       {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
